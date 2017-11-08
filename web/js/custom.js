@@ -51,9 +51,10 @@ $(document).ready(function(){
         }
     });
 
-    $(".slide#first").backstretch("images/s/01.jpg");
-    $(".slide#sec").backstretch("images/s/02.jpg");
-    $(".slide#third").backstretch("images/s/03.jpg");
+    $(".slide#first").backstretch("images/s/a1.png");
+    $(".slide#third").backstretch("images/s/a3.jpg");
+	$(".slide#four").backstretch("images/s/a4.jpg");
+	$(".slide#five").backstretch("images/s/a5.jpg");
     $('.slide .backstretch img').on('dragstart', function(event) { event.preventDefault(); });
 
     $(".slidecontent").each(function(){
