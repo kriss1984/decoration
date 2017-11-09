@@ -15,6 +15,7 @@
 	<!-- //Custom Theme files -->
 	<!-- js -->
 	<script src="js/jquery.min.js"></script>
+	<script src="js/form.js"></script>
 	<!-- //js -->	
 	<!-- start-smoth-scrolling-->
 	<script type="text/javascript" src="js/move-top.js"></script>
@@ -40,21 +41,14 @@
 	<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
 		    <script type="text/javascript">
 			    $(document).ready(function () {
-			        $('#horizontalTab').easyResponsiveTabs({
-			            type: 'default', //Types: default, vertical, accordion           
-			            width: 'auto', //auto or any width like 600px
-			            fit: true   // 100% fit in a container
-			        });
 					
-					 $( "ul.nav1" ).slideToggle( 300, function() {
-					 // Animation complete.
-					  });
 			    });
 	</script>
     <style>
 		.layui-form-label{width:150px}
 		.layui-input-block{margin-left:170px}
 		.blog-bottom img{width:99%}
+		.col-md-3{text-align:center}
 	</style>
 </head>
 <body>
@@ -65,21 +59,12 @@
 			<div class="col-md-9 top-nav">
 				
 				<ul class="nav1">
-					<li><a href="index.html" class="active" >首页</a></li>
 					<li><a href="plugin/player/index.html" >节目回顾</a></li>
-					<li><a href="http://site.wsyvip.com/newslist.php?cid=8756&listid=3&sid=294&weixinname=" >活动花絮</a></li>
+					<li><a href="http://site.wsyvip.com/000newslist.php?cid=8756&listid=3&sid=294&weixinname=" >活动花絮</a></li>
 					<li><a href="#regist" >我要装修</a></li>
 					<li><a href="#hot" >阿亮爆款</a></li>
 				</ul>	
-				<!-- script-for-menu -->
-				 <script>
-				   $( "span.menu" ).click(function() {
-					 $( "ul.nav1" ).slideToggle( 300, function() {
-					 // Animation complete.
-					  });
-					 });
-				</script>
-				<!-- /script-for-menu -->
+			
 			</div>
 			<div class="col-md-3 header-logo">
 				<a href="index.html"><img src="images/logo.png" alt="logo" /></a>
@@ -91,28 +76,16 @@
             <div class='pageblock' id='fullscreen' style="height:500px">
             		<div class='slider'>
 					<div class='slide' id="first">
-						<div class='slidecontent'>
-							<span class="headersur">浙江广电私家车107电台著名主持人</span>
-							<h1>装修找阿亮</h1>
-						</div>
+						
 					</div>
                     <div class='slide' id="third">
-						<div class='slidecontent'>
-<span class="headersur">浙江广电私家车107电台著名主持人</span>
-							<h1>装修找阿亮</h1>
-						</div>
+						
 					</div>
                      <div class='slide' id="four">
-						<div class='slidecontent'>
-<span class="headersur">浙江广电私家车107电台著名主持人</span>
-							<h1>装修找阿亮</h1>
-						</div>
+						
 					</div>
                      <div class='slide' id="five">
-						<div class='slidecontent'>
-<span class="headersur">浙江广电私家车107电台著名主持人</span>
-							<h1>装修找阿亮</h1>
-						</div>
+						
 					</div>
 				</div>
             </div>
@@ -128,83 +101,112 @@
 			<h3 id="regist">我要装修-报名机会抢占通道</h3>
 			<div class="services-grids">
 				
-                <form class="layui-form" action="">
+                <form class="layui-form" action="http://site.wsyvip.com/plugins/yuyue3/ajax_2.php?action=SubmitBook&id=432&sid=294" id="registForm" method="post">
                       <div class="layui-form-item">
-                        <label class="layui-form-label">户型大小</label>
+                        <label class="layui-form-label">户型大小<font color="red">*</font></label>
                         <div class="layui-input-block">
-                          <input type="text" name="title" required  lay-verify="required" placeholder="请输入户型大小"  class="layui-input">
+                          <input type="text" name="house"  placeholder="请输入户型大小"  class="layui-input required">
                         </div>
                       </div>
                       <div class="layui-form-item">
-                        <label class="layui-form-label">预算</label>
+                        <label class="layui-form-label">预算<font color="red">*</font></label>
                         <div class="layui-input-block">
-                          <input type="text" name="title" required  lay-verify="required" placeholder="请输入预算"  class="layui-input">
+                          <input type="text" name="money"  placeholder="请输入预算"  class="layui-input required">
                         </div>
                       
                       </div>
                       <div class="layui-form-item">
                         <label class="layui-form-label">意向装修公司</label>
                         <div class="layui-input-block">
-                             <input type="text" name="title" required  lay-verify="required" placeholder="请输入意向装修公司"  class="layui-input">
+                             <input type="text" name="hope" placeholder="请输入意向装修公司"  class="layui-input">
                         </div>
                       </div>
                       <div class="layui-form-item">
                         <label class="layui-form-label">投诉建议</label>
                         <div class="layui-input-block">
-                           <textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
+                           <textarea name="speak" placeholder="请输入内容" class="layui-textarea"></textarea>
                         </div>
                       </div>
                       <div class="layui-form-item">
-                        <label class="layui-form-label">姓名</label>
+                        <label class="layui-form-label">姓名<font color="red">*</font></label>
                         <div class="layui-input-block">
-                          <input type="text" name="title" required  lay-verify="required" placeholder="请输入姓名"  class="layui-input">
+                          <input type="text" name="name"  placeholder="请输入姓名"  class="layui-input required">
                         </div>
                       </div>
                       <div class="layui-form-item">
-                        <label class="layui-form-label">联系方法</label>
+                        <label class="layui-form-label">联系方法<font color="red">*</font></label>
                         <div class="layui-input-block">
-                           <input type="text" name="title" required  lay-verify="required" placeholder="请输入联系方法"  class="layui-input">
+                           <input type="text" name="phone"  placeholder="请输入联系方法"  class="layui-input required">
                         </div>
                       </div>
                       <div class="layui-form-item layui-form-text">
                         <label class="layui-form-label">意向建材品牌</label>
                         <div class="layui-input-block">
-                          <textarea name="desc" placeholder="意向建材品牌（如地板、卫浴、瓷砖等）" class="layui-textarea"></textarea>
+                          <textarea name="what" placeholder="意向建材品牌（如地板、卫浴、瓷砖等）" class="layui-textarea"></textarea>
                         </div>
                       </div>
                        <div class="layui-form-item layui-form-text">
                         <label class="layui-form-label">意向家电品牌</label>
                         <div class="layui-input-block">
-                          <textarea name="desc" placeholder="意向家电品牌（如空调、灶具、电视机等）" class="layui-textarea"></textarea>
+                          <textarea name="what" placeholder="意向家电品牌（如空调、灶具、电视机等）" class="layui-textarea"></textarea>
                         </div>
                       </div>
                       
                        <div class="layui-form-item layui-form-text">
                         <label class="layui-form-label">其他说明</label>
                         <div class="layui-input-block">
-                          <textarea name="desc" placeholder="请输入其他说明" class="layui-textarea"></textarea>
+                          <textarea name="others" placeholder="请输入其他说明" class="layui-textarea"></textarea>
+                        </div>
+                      </div>
+					  <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">所在地区<font color="red">*</font></label>
+                        <div class="layui-input-block">
+                          <input type="text" name="region"  placeholder="请输入所在地区"  class="layui-input required">
                         </div>
                       </div>
                       <div class="layui-form-item">
-                        
-                          <button class="layui-btn" lay-submit lay-filter="formDemo">立即报名</button>   
-                       
+                          <a class="layui-btn" onclick="submitData()">立即报名</a>   
                       </div>
                     </form>
                     <script>
-						
-						layui.use('form', function(){
-							var form = layui.form;
-							
-							//监听提交
-							form.on('submit(formDemo)', function(data){
-								layer.msg(JSON.stringify(data.field));
-								return false;
+						function submitData(){
+							var flag  = false;
+							$(".required").each(function(){
+								if($(this).val()==""){
+									 layui.use(['form', 'layer'], function () {
+										layer.msg("请填写必要信息！");
+									 });
+									 $(this).focus();
+									flag = true;
+									return false;
+								}
 							});
+							
+							
+						if(flag){
+							return;
+							}
+						 layui.use(['form','layer'], function () {
+							layer.msg("提交成功！");
+						 });
+						
+						    
+						$("#registForm").ajaxSubmit({
+							type:"post",
+							dataType:"jsonp",
+							jsonp: "callback",
+							jsonpCallback:"dealResult",
+							success:function(da){
+								
+							}
 						});
+						return false;
+							
+						}
+						
+						
 						</script>
-		
-				<div class="clearfix"> </div>
+					<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
@@ -219,22 +221,22 @@
 				<div class="row">
 					<div class="col-md-3 ">
                         <div class="imgDIV">
-							<a href="javascript:;"><img src="images/brands/20170622135043936.png" alt="" /></a>
+							<a href="http://site.wsyvip.com/newsshow.php?id=20803&sid=294&weixinname="><img src="images/brands/20170622135043936.png" alt="" /></a>
                         </div>
 					</div>
 					<div class="col-md-3 ">
                      <div class="imgDIV">
-						<a href="javascript:;"><img src="images/brands/20170622140222829.png" alt="" /></a>
+						<a href="http://site.wsyvip.com/newsshow.php?id=20804&sid=294&weixinname="><img src="images/brands/20170622140222829.png" alt="" /></a>
                          </div>
 					</div>
                     <div class="col-md-3 ">
                      <div class="imgDIV">
-						<a href="javascript:;"><img src="images/brands/20170622174840864.png" alt="" /></a>
+						<a href="http://site.wsyvip.com/newsshow.php?id=20805&sid=294&weixinname="><img src="images/brands/20170622174840864.png" alt="" /></a>
                          </div>
 					</div>
                     <div class="col-md-3 ">
                      <div class="imgDIV">
-						<a href="javascript:;"><img src="images/brands/20170807090956620.png" alt="" /></a>
+						<a href="http://site.wsyvip.com/newsshow.php?id=20854&sid=294&weixinname="><img src="images/brands/20170807090956620.png" alt="" /></a>
                          </div>
 					</div>
                    
@@ -242,22 +244,22 @@
                 <div class="row">
                          <div class="col-md-3 ">
                                 <div class="imgDIV">
-                                <a href="javascript:;"><img src="images/brands/20170814144036347.jpg" alt="" /></a>
+                                <a href="http://site.wsyvip.com/newsshow.php?id=20855&sid=294&weixinname="><img src="images/brands/20170814144036347.jpg" alt="" /></a>
                                 </div>
                             </div>
                             <div class="col-md-3 ">
                                <div class="imgDIV">
-                                <a href="javascript:;"><img src="images/brands/20170622174654472.png" alt="" /></a>
+                                <a href="http://site.wsyvip.com/newsshow.php?id=20806&sid=294&weixinname="><img src="images/brands/20170622174654472.png" alt="" /></a>
                                   </div>
                             </div>
                             <div class="col-md-3 ">
                              <div class="imgDIV">
-                                <a href="javascript:;"><img src="images/brands/20171028093813135.jpg" alt="" /></a>
+                                <a href="http://site.wsyvip.com/newsshow.php?id=21045&sid=294&weixinname="><img src="images/brands/20171028093813135.jpg" alt="" /></a>
                                   </div>
                             </div>
                             <div class="col-md-3 ">
                                 <div class="imgDIV">
-                                   <a href="javascript:;"><img src="images/brands/20171028140420615.jpg" alt="" /></a>
+                                   <a href="http://site.wsyvip.com/newsshow.php?id=21046&sid=294&weixinname="><img src="images/brands/20171028140420615.jpg" alt="" /></a>
                                  </div>
                             </div>
                            
@@ -265,22 +267,22 @@
                  <div class="row">
                          <div class="col-md-3 ">
                                 <div class="imgDIV">
-                                <a href="javascript:;"><img src="images/brands/20170906150544431.png" alt="" /></a>
+                                <a href="http://site.wsyvip.com/newsshow.php?id=20945&sid=294&weixinname="><img src="images/brands/20170906150544431.png" alt="" /></a>
                                 </div>
                             </div>
                             <div class="col-md-3 ">
                                <div class="imgDIV">
-                                <a href="javascript:;"><img src="images/brands/20170622140408509.png" alt="" /></a>
+                                <a href="http://site.wsyvip.com/newsshow.php?id=20807&sid=294&weixinname="><img src="images/brands/20170622140408509.png" alt="" /></a>
                                 </div>
                             </div>
                             <div class="col-md-3 ">
                                 <div class="imgDIV">
-                                <a href="javascript:;"><img src="images/brands/20170622140057739.png" alt="" /></a>
+                                <a href="http://site.wsyvip.com/newsshow.php?id=20808&sid=294&weixinname="><img src="images/brands/20170622140057739.png" alt="" /></a>
                                 </div>
                             </div>
                             <div class="col-md-3 ">
                                 <div class="imgDIV">
-                                <a href="javascript:;"><img src="images/brands/20170622174757107.png" alt="" /></a>
+                                <a href="http://site.wsyvip.com/newsshow.php?id=20809&sid=294&weixinname="><img src="images/brands/20170622174757107.png" alt="" /></a>
                                 </div>
                             </div>
                            
@@ -289,12 +291,12 @@
                  <div class="row">
                             <div class="col-md-3 ">
                                 <div class="imgDIV">
-                                <a href="javascript:;"><img src="images/brands/20170622140508443.png" alt="" /></a>
+                                <a href="http://site.wsyvip.com/newsshow.php?id=20810&sid=294&weixinname="><img src="images/brands/20170622140508443.png" alt="" /></a>
                                 </div>
                             </div>
                             <div class="col-md-3 ">
                               <div class="imgDIV">
-                                <a href="javascript:;"><img src="images/brands/20170907105007118.jpg" alt="" /></a>
+                                <a href="http://site.wsyvip.com/newsshow.php?id=20944&sid=294&weixinname="><img src="images/brands/20170907105007118.jpg" alt="" /></a>
                                 </div>
                             </div>
                           
@@ -349,6 +351,8 @@
 										*/
 										
 										$().UItoTop({ easingType: 'easeOutQuart' });
+										var screenWidth = $("#fullscreen").width();
+										$("#fullscreen").css("height",(screenWidth*0.55)+"px");
 										
 									});
 								</script>

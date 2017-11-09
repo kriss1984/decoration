@@ -57,7 +57,4 @@ $(document).ready(function(){
 	$(".slide#five").backstretch("images/s/a5.jpg");
     $('.slide .backstretch img').on('dragstart', function(event) { event.preventDefault(); });
 
-    $(".slidecontent").each(function(){
-        $(this).css('margin-top', -$(this).height()/2);
-    });
 });

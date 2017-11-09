@@ -84,19 +84,23 @@ span.menu {
 	cursor: pointer;
 }
 ul.nav1 {
-  	display: none;
-  	position: absolute;
   	left: 0;
   	right: 0;
   	top: 0%;
   	margin: 0;
   	padding: 0;
 }
+
+.top-nav{
+	position:absolute;
+}
 .top-nav ul li {
+	
   	list-style-type: none;
   	display: inline-block;
   	padding: 2.1em 0;
   	float: left;
+	max-width:20%;
   	margin-right: 2px;
 }
 .top-nav ul li a{
@@ -1520,7 +1524,7 @@ span.menu img {
 }
 .top-nav {
   	float: left;
- 	width: 75%;
+ 	
 }
 .header-logo {
   	float: right;
@@ -2635,6 +2639,18 @@ ul.nav1 {
 
 .pageblock{
 	width: 100%;
+	display: inline-block;
+padding: 10px;
+text-decoration: none;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+text-shadow: 0 -1px 1px rgba(0,0,0,0.5);
+border-bottom: 1px solid rgba(0,0,0,0.5);
+position: relative;
+cursor: pointer;
 }
 
 .pagewrap .fb-like{
@@ -2800,18 +2816,20 @@ ul.nav1 {
 }
 
 .imgDIV {
- display: table-cell;
- vertical-align:middle;
+ 
  text-align:center;
- *display: block;
  *font-size: 175px;
  *font-family:Arial;
- width:300px;
- height:300px;
+ width:280px;
+ height:280px;
  border: 1px solid #eee;
+ margin:0 auto;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
 
 }
 .imgDIV img {
- 
  vertical-align:middle;
 }
