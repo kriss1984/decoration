@@ -45,10 +45,21 @@
 			    });
 	</script>
     <style>
-		.layui-form-label{width:150px}
-		.layui-input-block{margin-left:170px}
+		.layui-form-label{width:100px;padding:9px 2px;color:white;font-weight:bold}
+		.layui-input-block{margin-left:110px}
 		.blog-bottom img{width:99%}
 		.col-md-3{text-align:center}
+		.container{position:relative}
+		.header-logo{
+			position:absolute;
+			top:0px;
+			right:0px;
+			}
+			#regist{ background:url(images/10.png) center no-repeat;}
+			#hot{ background:url(images/11.png) center no-repeat;}
+			#brief{background:url(images/12.png) center no-repeat;}
+			.layui-input,.layui-textarea{
+			filter:alpha(Opacity=80);-moz-opacity:0.5;opacity: 0.5;}
 	</style>
 </head>
 <body>
@@ -56,37 +67,38 @@
 	<div class="header">
 		
 		<div class="container">
-			<div class="col-md-9 top-nav">
-				
-				<ul class="nav1">
-					<li><a href="plugin/player/index.html" >节目回顾</a></li>
-					<li><a href="http://site.wsyvip.com/000newslist.php?cid=8756&listid=3&sid=294&weixinname=" >活动花絮</a></li>
-					<li><a href="#regist" >我要装修</a></li>
-					<li><a href="#hot" >阿亮爆款</a></li>
-				</ul>	
-			
-			</div>
-			<div class="col-md-3 header-logo">
-				<a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+           
+            <div class="col-md-12 top-nav">
+                <ul class="nav1">
+                    <li><a href="plugin/player/index.html" >节目回顾</a></li>
+                    <li><a href="http://site.wsyvip.com/000newslist.php?cid=8756&listid=3&sid=294&weixinname=" >活动花絮</a></li>
+                    <li><a href="#regist" >我要装修</a></li>
+                    <li><a href="#regist" >我要建材</a></li>
+                    <li><a href="#hot" >阿亮爆款</a></li>
+                </ul>	
+            </div>
+       
+			<div class="header-logo">
+				<a href="index.html"><img src="images/logo2.png" alt="logo" /></a>
 			</div>	
 			
             
              <div class="clearfix"> </div>
          
             <div class='pageblock' id='fullscreen' style="height:500px">
-            		<div class='slider'>
-					<div class='slide' id="first">
-						
-					</div>
-                    <div class='slide' id="third">
-						
-					</div>
-                     <div class='slide' id="four">
-						
-					</div>
-                     <div class='slide' id="five">
-						
-					</div>
+            	<div class='slider'>
+                        <div class='slide' id="first">
+                            
+                        </div>
+                        <div class='slide' id="third">
+                            
+                        </div>
+                         <div class='slide' id="four">
+                            
+                        </div>
+                         <div class='slide' id="five">
+                            
+                        </div>
 				</div>
             </div>
            
@@ -96,74 +108,79 @@
 	</div>
 	<!--//header-->
 	<!--services-->
-	<div class="services">
+	<div class="services" >
 		<div class="container">
-			<h3 id="regist">我要装修-报名机会抢占通道</h3>
-			<div class="services-grids">
+			<h3 id="regist" style="padding-top:40px;padding-bottom:40px;color:white">我要装修-报名机会抢占通道</h3>
+			<div class="services-grids" style="background-image:url(images/head_bg.jpg);padding:20px 10px" >
 				
                 <form class="layui-form" action="http://site.wsyvip.com/plugins/yuyue3/ajax_2.php?action=SubmitBook&id=432&sid=294" id="registForm" method="post">
-                      <div class="layui-form-item">
-                        <label class="layui-form-label">户型大小<font color="red">*</font></label>
-                        <div class="layui-input-block">
-                          <input type="text" name="house"  placeholder="请输入户型大小"  class="layui-input required">
-                        </div>
-                      </div>
-                      <div class="layui-form-item">
-                        <label class="layui-form-label">预算<font color="red">*</font></label>
-                        <div class="layui-input-block">
-                          <input type="text" name="money"  placeholder="请输入预算"  class="layui-input required">
-                        </div>
+				
+				    <div class="row">
+						<div class="col-md-6">
+							  <div class="layui-form-item">
+								<label class="layui-form-label">姓名<font color="red">*</font></label>
+								<div class="layui-input-block">
+								  <input type="text" name="name"  placeholder="请输入姓名"  class="layui-input required">
+								</div>
+                             </div>
+                       </div>
+						
+						<div class="col-md-6">
+							    <div class="layui-form-item">
+								<label class="layui-form-label">联系方法<font color="red">*</font></label>
+								<div class="layui-input-block">
+								   <input type="text" name="phone"  placeholder="请输入联系方法"  class="layui-input required">
+								</div>
+							  </div>
+						</div>
+				 </div>
+				
+				
+				  <div class="row">
+						<div class="col-md-6">
+							 <div class="layui-form-item layui-form-text">
+								<label class="layui-form-label">意向建材品牌</label>
+								<div class="layui-input-block">
+								  <textarea name="what" placeholder="意向建材品牌（如地板、卫浴、瓷砖等）" class="layui-textarea"></textarea>
+								</div>
+							  </div>
+                       </div>
+						
+						<div class="col-md-6">
+							     <div class="layui-form-item layui-form-text">
+									<label class="layui-form-label">意向家电品牌</label>
+									<div class="layui-input-block">
+									  <textarea name="what" placeholder="意向家电品牌（如空调、灶具、电视机等）" class="layui-textarea"></textarea>
+									</div>
+								  </div>
+						</div>
+				 </div>
+				
+				
+				
+				 <div class="row">
+						<div class="col-md-6">
+							  <div class="layui-form-item">
+								<label class="layui-form-label">意向装修公司</label>
+									<div class="layui-input-block">
+										 <input type="text" name="hope" placeholder="请输入意向装修公司"  class="layui-input">
+									</div>
+                             </div>
+						</div>
+						<div class="col-md-6">
+							  <div class="layui-form-item layui-form-text">
+								<label class="layui-form-label">其他说明</label>
+								<div class="layui-input-block">
+								  <textarea name="others" placeholder="请输入其他说明" class="layui-textarea"></textarea>
+								</div>
+							  </div>
+						</div>
+				 </div>
+				
+				
+		
                       
-                      </div>
-                      <div class="layui-form-item">
-                        <label class="layui-form-label">意向装修公司</label>
-                        <div class="layui-input-block">
-                             <input type="text" name="hope" placeholder="请输入意向装修公司"  class="layui-input">
-                        </div>
-                      </div>
-                      <div class="layui-form-item">
-                        <label class="layui-form-label">投诉建议</label>
-                        <div class="layui-input-block">
-                           <textarea name="speak" placeholder="请输入内容" class="layui-textarea"></textarea>
-                        </div>
-                      </div>
-                      <div class="layui-form-item">
-                        <label class="layui-form-label">姓名<font color="red">*</font></label>
-                        <div class="layui-input-block">
-                          <input type="text" name="name"  placeholder="请输入姓名"  class="layui-input required">
-                        </div>
-                      </div>
-                      <div class="layui-form-item">
-                        <label class="layui-form-label">联系方法<font color="red">*</font></label>
-                        <div class="layui-input-block">
-                           <input type="text" name="phone"  placeholder="请输入联系方法"  class="layui-input required">
-                        </div>
-                      </div>
-                      <div class="layui-form-item layui-form-text">
-                        <label class="layui-form-label">意向建材品牌</label>
-                        <div class="layui-input-block">
-                          <textarea name="what" placeholder="意向建材品牌（如地板、卫浴、瓷砖等）" class="layui-textarea"></textarea>
-                        </div>
-                      </div>
-                       <div class="layui-form-item layui-form-text">
-                        <label class="layui-form-label">意向家电品牌</label>
-                        <div class="layui-input-block">
-                          <textarea name="what" placeholder="意向家电品牌（如空调、灶具、电视机等）" class="layui-textarea"></textarea>
-                        </div>
-                      </div>
-                      
-                       <div class="layui-form-item layui-form-text">
-                        <label class="layui-form-label">其他说明</label>
-                        <div class="layui-input-block">
-                          <textarea name="others" placeholder="请输入其他说明" class="layui-textarea"></textarea>
-                        </div>
-                      </div>
-					  <div class="layui-form-item layui-form-text">
-                        <label class="layui-form-label">所在地区<font color="red">*</font></label>
-                        <div class="layui-input-block">
-                          <input type="text" name="region"  placeholder="请输入所在地区"  class="layui-input required">
-                        </div>
-                      </div>
+					
                       <div class="layui-form-item">
                           <a class="layui-btn" onclick="submitData()">立即报名</a>   
                       </div>
@@ -215,7 +232,7 @@
 	<div class="blog">
 		<div class="container">
 			<div class="blog-top">
-				<h3 id="hot">阿亮爆款</h3>
+				<h3 id="hot" style="padding-top:40px;padding-bottom:40px;color:white">阿亮爆款</h3>
 			</div>
 			<div class="blog-bottom">
 				<div class="row">
@@ -311,7 +328,7 @@
 	<!--testimonials-->
 	<div class="testimonials services">
 		<div class="container">
-			<h3>栏目简介</h3>
+			<h3 id="brief" style="padding-top:40px;padding-bottom:40px;color:white">栏目简介</h3>
 			<div class="sap_tabs row">	
 				<div class="col-md-4">
 					<img src="images/s/brief.jpg" style="width:80%"/>
@@ -352,7 +369,7 @@
 										
 										$().UItoTop({ easingType: 'easeOutQuart' });
 										var screenWidth = $("#fullscreen").width();
-										$("#fullscreen").css("height",(screenWidth*0.55)+"px");
+										$("#fullscreen").css("height",(screenWidth*0.50)+"px");
 										
 									});
 								</script>

@@ -51,7 +51,7 @@ $(document).ready(function(){
         }
     });
 
-    $(".slide#first").backstretch("images/s/a1.png");
+    $(".slide#first").backstretch("images/s/a1.jpg");
     $(".slide#third").backstretch("images/s/a3.jpg");
 	$(".slide#four").backstretch("images/s/a4.jpg");
 	$(".slide#five").backstretch("images/s/a5.jpg");

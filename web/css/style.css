@@ -13,7 +13,7 @@ body a{
 /*--header--*/
 .header {
   	position: relative;
-background: url(../images/bnr-1.jpg) no-repeat;
+background: url(../images/head_bg.jpg) no-repeat;
   	min-height: 790px;
   	background-size: 100% 100%;
   	-webkit-background-size: 100% 100%;
@@ -100,7 +100,7 @@ ul.nav1 {
   	display: inline-block;
   	padding: 2.1em 0;
   	float: left;
-	max-width:20%;
+	max-width:17%;
   	margin-right: 2px;
 }
 .top-nav ul li a{
@@ -130,13 +130,13 @@ ul.nav1 {
   	padding-top: 2em;
 }
 .services h3,.blog-top h3{
-  	margin: 0;
+  	margin: 10px 0px;
   	color: #353A3F;
   	font-size: 21px;
   	letter-spacing: 3px;
   	font-weight: 700;
-  	border-bottom: 1px solid rgba(53, 58, 63, 0.55);
-  	padding-bottom: 6px;
+  	border-bottom: 1px solid rgba(73, 59, 76, 0.3);
+  	padding-bottom: 20px;
 }
 .services-grids {
   margin-top: 2em;
@@ -191,7 +191,13 @@ ul.nav1 {
 /*--blog--*/
 .blog{
 	padding:2em 0px;
+	margin-top:20px
 }
+.blog .container{
+
+}
+
+	
 .blog-top{
 	text-align:center;
 }
@@ -1161,7 +1167,7 @@ ul.nav1 {
   	left: 8.1%;
 }
 .header {
-  min-height: 610px;
+  min-height: 710px;
 }
 .services {
   padding-top: 2em;
@@ -2638,17 +2644,19 @@ ul.nav1 {
 }
 
 .pageblock{
+	
+	margin-top:5%;
 	width: 100%;
 	display: inline-block;
-padding: 10px;
+padding: 5px;
 text-decoration: none;
 border-radius: 5px;
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
--moz-box-shadow: 0 5px 10px rgba(0,0,0,0.5);
--webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.5);
-text-shadow: 0 -1px 1px rgba(0,0,0,0.5);
-border-bottom: 1px solid rgba(0,0,0,0.5);
+-moz-box-shadow: 0 35px 35px rgba(255,255,255,0.5);
+-webkit-box-shadow: 0 35px 35px rgba(255,255,255,0.3);
+text-shadow: 0 -1px 1px rgba(255,255,255,0.5);
+border-bottom: 1px solid rgba(255,255,255,0.5);
 position: relative;
 cursor: pointer;
 }
@@ -2700,6 +2708,7 @@ cursor: pointer;
 	height: 100%;
 	overflow: hidden;
 	position: relative;
+	background-color:#FFF
 }
 
 .pageblock#fullscreen .slider .slide{
@@ -2828,6 +2837,7 @@ cursor: pointer;
  justify-content:center;
  align-items:center;
  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+ background-color:#FFF
 
 }
 .imgDIV img {
