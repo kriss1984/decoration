@@ -1,6 +1,6 @@
 body{
 	margin:0;
-	font-family: 'Raleway', sans-serif;
+	font-family: '宋体', sans-serif;
 	background:#fff !important;
 }
 body a{
@@ -2699,7 +2699,7 @@ cursor: pointer;
 	font-size: 72px;
 	margin: 0;
 	padding: 0;
-	font-family: 'sxehwcmaax-blackblack', Helvetica, Arial, Verdana;
+	font-family: '微软雅黑', Helvetica, Arial, Verdana;
 	font-weight:normal;
 }
 
@@ -2828,7 +2828,7 @@ cursor: pointer;
  
  text-align:center;
  *font-size: 175px;
- *font-family:Arial;
+ *font-family:'微软雅黑';
  width:280px;
  height:280px;
  border: 1px solid #eee;
