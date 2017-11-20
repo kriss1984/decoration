@@ -45,6 +45,10 @@
 			    });
 	</script>
     <style>
+	
+	    .layui-form-item .layui-form-label{
+		white-space:unset
+		}
 		.layui-form-label{width:100px;padding:9px 2px;color:white;font-weight:bold}
 		.layui-input-block{margin-left:110px}
 		.blog-bottom img{width:99%}
@@ -171,9 +175,9 @@
 						</div>
 						<div class="col-md-6">
 							  <div class="layui-form-item layui-form-text">
-								<label class="layui-form-label">其他说明</label>
+								<label class="layui-form-label">是否需要检测治理</label>
 								<div class="layui-input-block">
-								  <textarea name="others" placeholder="请输入其他说明" class="layui-textarea"></textarea>
+								  <textarea name="others" placeholder="如除甲醛、苯等空气治理" class="layui-textarea"></textarea>
 								</div>
 							  </div>
 						</div>
@@ -184,7 +188,7 @@
                       
 					
                       <div class="layui-form-item">
-                          <a class="layui-btn" onclick="submitData()">立即报名</a>   
+                          <a class="layui-btn" onclick="submitData()" style="color:#666;font-weight:bold">立即报名</a>   
                       </div>
                     </form>
                     <script>
@@ -222,8 +226,6 @@
 						return false;
 							
 						}
-						
-						
 						</script>
 					<div class="clearfix"> </div>
 			</div>
@@ -233,95 +235,13 @@
 	<!--blog-->
 	<div class="blog">
 		<div class="container">
-			<div class="blog-top">
-				<h3 id="hot" style="padding-top:40px;padding-bottom:40px;color:white">阿亮爆款</h3>
+			<div class="blog-top" style="border-bottom:#999 1px dashed">
+				<!-- <h3 id="hot" style="padding-top:40px;padding-bottom:40px;color:white">阿亮爆款</h3> -->
+                <img src="images/bk.jpg" />
 			</div>
-			<div class="blog-bottom">
-             <div style="text-align:center;font-size:26px;font-weight:bold">以下品牌，找阿亮可以拿全省最低价！！！</div>
-				<div class="row">
-					<div class="col-md-3 ">
-                        <div class="imgDIV">
-							<a href="http://site.wsyvip.com/newsshow.php?id=20803&sid=294&weixinname="><img src="images/brands/20170622135043936.png" alt="" /></a>
-                        </div>
-					</div>
-					<div class="col-md-3 ">
-                     <div class="imgDIV">
-						<a href="http://site.wsyvip.com/newsshow.php?id=20804&sid=294&weixinname="><img src="images/brands/20170622140222829.png" alt="" /></a>
-                         </div>
-					</div>
-                    <div class="col-md-3 ">
-                     <div class="imgDIV">
-						<a href="http://site.wsyvip.com/newsshow.php?id=20805&sid=294&weixinname="><img src="images/brands/20170622174840864.png" alt="" /></a>
-                         </div>
-					</div>
-                    <div class="col-md-3 ">
-                     <div class="imgDIV">
-						<a href="http://site.wsyvip.com/newsshow.php?id=20854&sid=294&weixinname="><img src="images/brands/20170807090956620.png" alt="" /></a>
-                         </div>
-					</div>
-                   
-				</div>
-                <div class="row">
-                         <div class="col-md-3 ">
-                                <div class="imgDIV">
-                                <a href="http://site.wsyvip.com/newsshow.php?id=20855&sid=294&weixinname="><img src="images/brands/20170814144036347.jpg" alt="" /></a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 ">
-                               <div class="imgDIV">
-                                <a href="http://site.wsyvip.com/newsshow.php?id=20806&sid=294&weixinname="><img src="images/brands/20170622174654472.png" alt="" /></a>
-                                  </div>
-                            </div>
-                            <div class="col-md-3 ">
-                             <div class="imgDIV">
-                                <a href="http://site.wsyvip.com/newsshow.php?id=21045&sid=294&weixinname="><img src="images/brands/20171028093813135.jpg" alt="" /></a>
-                                  </div>
-                            </div>
-                            <div class="col-md-3 ">
-                                <div class="imgDIV">
-                                   <a href="http://site.wsyvip.com/newsshow.php?id=21046&sid=294&weixinname="><img src="images/brands/20171028140420615.jpg" alt="" /></a>
-                                 </div>
-                            </div>
-                           
-                </div>
-                 <div class="row">
-                         <div class="col-md-3 ">
-                                <div class="imgDIV">
-                                <a href="http://site.wsyvip.com/newsshow.php?id=20945&sid=294&weixinname="><img src="images/brands/20170906150544431.png" alt="" /></a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 ">
-                               <div class="imgDIV">
-                                <a href="http://site.wsyvip.com/newsshow.php?id=20807&sid=294&weixinname="><img src="images/brands/20170622140408509.png" alt="" /></a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 ">
-                                <div class="imgDIV">
-                                <a href="http://site.wsyvip.com/newsshow.php?id=20808&sid=294&weixinname="><img src="images/brands/20170622140057739.png" alt="" /></a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 ">
-                                <div class="imgDIV">
-                                <a href="http://site.wsyvip.com/newsshow.php?id=20809&sid=294&weixinname="><img src="images/brands/20170622174757107.png" alt="" /></a>
-                                </div>
-                            </div>
-                           
-                </div>
-                
-                 <div class="row">
-                            <div class="col-md-3 ">
-                                <div class="imgDIV">
-                                <a href="http://site.wsyvip.com/newsshow.php?id=20810&sid=294&weixinname="><img src="images/brands/20170622140508443.png" alt="" /></a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 ">
-                              <div class="imgDIV">
-                                <a href="http://site.wsyvip.com/newsshow.php?id=20944&sid=294&weixinname="><img src="images/brands/20170907105007118.jpg" alt="" /></a>
-                                </div>
-                            </div>
-                          
-                           
-                </div>
+			<div class="blog-bottom" id="brands">
+             <div style="text-align:center;font-size:20px;font-weight:bold;margin-bottom:10px;font-family:'华文隶书'">以下品牌，找阿亮可以拿全省最低价！！！</div>
+				
 				
 			</div>
 		</div>
@@ -336,16 +256,16 @@
 				<div class="col-md-4">
 					<img src="images/breif1.jpg" style="width:80%"/>
 				</div>	
-                <div class="col-md-8" style="line-height:50px;font-size:20px;font-family:'华文行楷'">
-                     <h2 style="font-size:36px">阿亮</h2>
-                     <br />
-                    浙江广电私家车107电台著名主持人，<br />
-                    荣膺浙江广电集团十大主持称号，<br />
-                    及浙江广电集团“六大名嘴”称号。<br />
-                    曾主持南派广播情景喜剧《阿亮的烦恼生活》，获中国广播娱乐节目金奖；<br />
-                    现主持《装修找阿亮》，是浙江省电台最权威最具影响力的家装服务节目，享誉业界；<br />
-                  
 
+                <div class="col-md-8" style="line-height:50px;font-size:18px;font-family:'华文隶书'" id="txt_brief">
+                     <h2 style="font-size:36px;padding-top:30px">阿亮</h2>
+                    
+                    浙江广电私家车107电台著名主持人<br />
+					浙江省建筑装饰行业协会家装分会副秘书长<br />
+                    荣膺浙江广电集团十大主持称号<br />
+                    及浙江广电集团“六大名嘴”称号<br />
+                    曾主持南派广播情景喜剧《阿亮的烦恼生活》<br />获中国广播娱乐节目金奖<br />
+                    现主持《装修找阿亮》<br />是浙江省电最权威最具影响力的家装服务节目<br />享誉业界
 				</div>
 			</div>		  
 		</div>
@@ -380,3 +300,37 @@
 	<!--//smooth-scrolling-of-move-up-->		
 </body>
 </html>
+
+<script>
+
+function IsPC() {
+    var userAgentInfo = navigator.userAgent;
+    var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+    var flag = true;
+    for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+            flag = false;
+            break;
+        }
+    }
+    return flag;
+}
+function loadBrands(pageUrl){
+	$.ajax({
+		url:pageUrl,
+		success: function(da){
+			$("#brands").append(da);
+			}
+		});
+}
+</script>
+<SCRIPT type=text/javascript>
+if(IsPC()){
+	loadBrands("frags/pc.html");  	
+}else{
+	loadBrands("frags/mobile.html");
+	$("#txt_brief").css({"font-size":"16px"});  
+}
+</SCRIPT>

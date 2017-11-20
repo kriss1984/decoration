@@ -135,7 +135,7 @@ ul.nav1 {
   	font-size: 21px;
   	letter-spacing: 3px;
   	font-weight: 700;
-  	border-bottom: 1px solid rgba(73, 59, 76, 0.3);
+  	border-bottom: 1px dashed rgba(73, 59, 76, 0.3);
   	padding-bottom: 20px;
 }
 .services-grids {
@@ -2836,10 +2836,30 @@ cursor: pointer;
  display:flex;
  justify-content:center;
  align-items:center;
- box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+ box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
  background-color:#FFF
-
 }
 .imgDIV img {
  vertical-align:middle;
+}
+
+.brandTable{
+	text-align:center;
+ *font-size: 175px;
+ *font-family:Arial;
+
+ margin:0 auto;
+ display:flex;
+ width:100%;
+ background-color:#FFF
+}
+.brandTable td{
+ border: 1px dashed #999;
+ padding:10px;
+ margin:10px;
+
+}
+.brandTable img{
+  width:90%;
+
 }
